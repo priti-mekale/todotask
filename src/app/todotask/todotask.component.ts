@@ -33,7 +33,7 @@ if(todoItemcontrol.value.length>0){
     }
     todoItemcontrol.value=''
    this.todoArray.unshift(todoObj)
-   this._matSnackBar.open(`new todo item addes successfully !!!`,"Close",{
+   this._matSnackBar.open(`New todo item added successfully !!!`,"Close",{
     duration:3000,
     horizontalPosition:'left',
     verticalPosition:'top'
@@ -53,7 +53,7 @@ console.log(Remove_id)
     const Get_index = this.todoArray.findIndex(todo => todo.todoId === todoId);
     //remove object from array
     this.todoArray.splice(Get_index, 1);
-     this._matSnackBar.open(`Thr todo item with id${todoId} Removed successfully !!!`,"Close",{
+     this._matSnackBar.open(`The todo item with id${todoId} Removed successfully !!!`,"Close",{
     duration:3000,
     horizontalPosition:'left',
     verticalPosition:'top'
